@@ -1,0 +1,22 @@
+/* Rotating animation */
+@keyframes rotate360 {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Applying the animation */
+.rotating {
+    animation: rotate360 5s linear infinite;
+    /* 5s duration, linear speed, infinite loop */
+    width: 100%;
+    /* Makes the image responsive */
+    max-width: 200px;
+    /* Sets a max width to avoid becoming too large */
+    height: auto;
+    /* Maintains aspect ratio */
+}
